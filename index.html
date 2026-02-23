@@ -479,7 +479,7 @@ body {
                     return imagePath;
                 }
                 // Encode for path safety but keep spaces unencoded for GitHub raw
-                const encodedPath = encodeURI(imagePath).replace(/%2520/g, '%20');
+                const encodedPath = encodeURI(imagePath).replace(/%252/g, '%2');
                 return STORAGE_BASE + encodedPath;
             }
 
