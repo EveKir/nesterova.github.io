@@ -1,5 +1,6 @@
 
 
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -392,7 +393,7 @@ body {
         <div class="nav-buttons">
             <button class="nav-btn active" onclick="showSection('cards')">📚 Все картины</button>
             <button class="nav-btn" onclick="showSection('flashcards')">🃏 Флэш-карточки</button>
-            <button class="nav-btn" onclick="showSection('quiz')">🎯 Викторина</button>
+            <button class="nav-btn" onclick="showSection('quiz')">🎯 Тест</button>
             <button class="nav-btn" onclick="showSection('reference')">🔍 Справочник</button>
         </div>
 
@@ -486,7 +487,7 @@ body {
         const paintings = [
             {
                 title: "Московский дворик",
-                artist: "В.Д. Поленов",
+                artist: "В. Д. Поленов",
                 year: "1870",
                 genre: "Пейзаж",
                 description: "Солнечный московский дворик с церковью. Открытие красоты в простоте.",
@@ -494,15 +495,15 @@ body {
             },
             {
                 title: "Христос в пустыне",
-                artist: "И.Н. Крамской",
+                artist: "И. Н. Крамской",
                 year: "1870",
-                genre: "Религиозная живопись",
+                genre: "",
                 description: "Христос на камне, нравственный выбор и искушение.",
                 image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Ivan_Kramskoy_-_Христос_в_пустыне_-_Google_Art_Project.jpg/1280px-Ivan_Kramskoy_-_Христос_в_пустыне_-_Google_Art_Project.jpg?20110220135450"
             },
             {
                 title: "Неизвестная",
-                artist: "И.Н. Крамской",
+                artist: "И. Н. Крамской",
                 year: "1880",
                 genre: "Портрет",
                 description: "Женщина в коляске, обобщённый образ эпохи.",
@@ -510,7 +511,7 @@ body {
             },
             {
                 title: "Оттепель",
-                artist: "Ф.А. Васильев",
+                artist: "Ф. А. Васильев",
                 year: "1870",
                 genre: "Пейзаж",
                 description: "Разбитая дорога, серое небо. Программное произведение.",
@@ -518,7 +519,7 @@ body {
             },
             {
                 title: "Мокрый луг",
-                artist: "Ф.А. Васильев",
+                artist: "Ф. А. Васильев",
                 year: "1870",
                 genre: "Пейзаж",
                 description: "Шедевр! Луг после дождя, свет сквозь облака.",
@@ -526,23 +527,23 @@ body {
             },
             {
                 title: "Тройка",
-                artist: "В.Г. Перов",
+                artist: "В. Г. Перов",
                 year: "1860",
-                genre: "Жанровая живопись",
+                genre: "",
                 description: "Дети-водовозы тащут бочку по морозу. Детский труд.",
                 image: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Тройка_-_Василий_Григорьевич_Перов_%281866%29.jpg/1280px-Тройка_-_Василий_Григорьевич_Перов_%281866%29.jpg?20170602231930"
             },
             {
                 title: "Свидание",
-                artist: "В.Е. Маковский",
+                artist: "В. Е. Маковский",
                 year: "1880",
-                genre: "Жанровая живопись",
+                genre: "",
                 description: "Мать навещает истощённого сына-подмастерье.",
                 image: "https://cdn.tretyakov.ru/mytretyakov/24/b241d35d8fa19f6e09ecfb5899c5f9cf/thumb/15022f67db9303fac3340fec23ba227f_x1.jpg"
             },
             {
                 title: "Портрет М.П. Мусоргского",
-                artist: "И.Е. Репин",
+                artist: "И. Е. Репин",
                 year: "1880",
                 genre: "Портрет",
                 description: "Композитор в красном больничном халате за несколько дней до смерти.",
@@ -550,39 +551,39 @@ body {
             },
             {
                 title: "Бурлаки на Волге",
-                artist: "И.Е. Репин",
+                artist: "И. Е. Репин",
                 year: "1870",
-                genre: "Жанровая живопись",
+                genre: "",
                 description: "Шедевр! 11 фигур измождённых людей тянут баржу.",
                 image: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Ilya_Repin_-_Barge_Haulers_on_the_Volga_-_Google_Art_Project.jpg/1280px-Ilya_Repin_-_Barge_Haulers_on_the_Volga_-_Google_Art_Project.jpg?20121001120614"
             },
             {
                 title: "Богатыри",
-                artist: "В.М. Васнецов",
+                artist: "В. М. Васнецов",
                 year: "1890",
-                genre: "Историческая живопись",
+                genre: "Исторический жанр",
                 description: "Три богатыря на конях: Илья, Добрыня, Алёша.",
                 image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Viktor_Vasnetsov_-_Богатыри_-_Google_Art_Project.jpg/1280px-Viktor_Vasnetsov_-_Богатыри_-_Google_Art_Project.jpg?20110220163855"
             },
             {
                 title: "Алёнушка",
-                artist: "В.М. Васнецов",
+                artist: "В. М. Васнецов",
                 year: "1880",
-                genre: "Жанровая живопись",
+                genre: "",
                 description: "Сказочный образ девушки у воды.",
                 image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Vasnetsov_Alenushka.jpg/960px-Vasnetsov_Alenushka.jpg?20180104112457"
             },
             {
                 title: "Боярыня Морозова",
-                artist: "В.И. Суриков",
+                artist: "В. И. Суриков",
                 year: "1880",
-                genre: "Историческая живопись",
+                genre: "Исторический жанр",
                 description: "Раскольница в санях, протянутая рука с двуперстием.",
                 image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Vasily_Surikov_-_Боярыня_Морозова_-_Google_Art_Project.jpg/1280px-Vasily_Surikov_-_Боярыня_Морозова_-_Google_Art_Project.jpg?20131120133141"
             },
             {
                 title: "Утро стрелецкой казни",
-                artist: "В.И. Суриков",
+                artist: "В. И. Суриков",
                 year: "1880",
                 genre: "Исторический жанр",
                 description: "Пётр I и стрельцы. Красная площадь, народная трагедия.",
@@ -590,7 +591,7 @@ body {
             },
             {
                 title: "Меншиков в Берёзове",
-                artist: "В.И. Суриков",
+                artist: "В. И. Суриков",
                 year: "1880",
                 genre: "Исторический жанр",
                 description: "Опальный вельможа в ссылке читает Библию.",
@@ -598,7 +599,7 @@ body {
             },
             {
                 title: "Рожь",
-                artist: "И.И. Шишкин",
+                artist: "И. И. Шишкин",
                 year: "1870",
                 genre: "Пейзаж",
                 description: "Шедевр! Золотое поле, сосны, дорога, облака.",
@@ -606,7 +607,7 @@ body {
             },
             {
                 title: "Утро в сосновом лесу",
-                artist: "И.И. Шишкин",
+                artist: "И. И. Шишкин",
                 year: "1880",
                 genre: "Пейзаж",
                 description: "Туман, медвежата среди могучих сосен.",
@@ -614,7 +615,7 @@ body {
             },
             {
                 title: "Грачи прилетели",
-                artist: "А.К. Саврасов",
+                artist: "А. К. Саврасов",
                 year: "1870",
                 genre: "Пейзаж",
                 description: "Шедевр русского пейзажа! Весна, грачи на берёзах, церковь.",
@@ -622,31 +623,15 @@ body {
             },
             {
                 title: "Над вечным покоем",
-                artist: "И.И. Левитан",
+                artist: "И. И. Левитан",
                 year: "1890",
                 genre: "Пейзаж",
                 description: "Философский шедевр. Озеро, церковь, кладбище, тучи.",
                 image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Levitan_nad_vech_pok28.jpg/1280px-Levitan_nad_vech_pok28.jpg?20080327112839"
             },
             {
-                title: "Золотая осень",
-                artist: "И.И. Левитан",
-                year: "1890",
-                genre: "Пейзаж",
-                description: "Река, осенние деревья, солнце.",
-                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Levitan_Zolotaya_Osen.jpg/1280px-Levitan_Zolotaya_Osen.jpg?20160706192753"
-            },
-            {
-                title: "Март",
-                artist: "И.И. Левитан",
-                year: "1890",
-                genre: "Пейзаж",
-                description: "Весна, солнце, лошадь у крыльца. Радостное настроение.",
-                image: "https://cdn.tretyakov.ru/mytretyakov/24/29016ac0419e26eb4bd1c8206448b1fc/thumb/85696f347308ed4c4b88be721146dc84_x1.jpg"
-            },
-            {
                 title: "Лунная ночь на Днепре",
-                artist: "А.И. Куинджи",
+                artist: "А. И. Куинджи",
                 year: "1870",
                 genre: "Пейзаж",
                 description: "Сенсация! Яркий свет луны на реке. Выставлялась в темноте при свечах.",
@@ -654,7 +639,7 @@ body {
             },
             {
                 title: "Берёзовая роща",
-                artist: "А.И. Куинджи",
+                artist: "А. И. Куинджи",
                 year: "1880",
                 genre: "Пейзаж",
                 description: "Солнечные берёзы, декоративность.",
@@ -662,15 +647,15 @@ body {
             },
             {
                 title: "Тайная вечеря",
-                artist: "Н.Н. Ге",
+                artist: "Н. Н. Ге",
                 year: "1860",
-                genre: "Религиозная живопись",
+                genre: "",
                 description: "Иуда уходит во тьму. Контраст света и тьмы.",
                 image: "https://rusmuseumvrm.ru/data/collections/painting/19_20/zh_4141/2025_mainfoto_03.jpg"
             },
             {
                 title: "Что есть истина?",
-                artist: "Н.Н. Ге",
+                artist: "Н. Н. Ге",
                 year: "1890",
                 genre: "Исторический жанр",
                 description: "Христос и Пилат. Контраст власти и истины.",
@@ -678,7 +663,7 @@ body {
             },
             {
                 title: "Пётр I допрашивает царевича Алексея",
-                artist: "Н.Н. Ге",
+                artist: "Н. Н. Ге",
                 year: "1870",
                 genre: "Исторический жанр",
                 description: "Драма отцовства. Психологическая драма в Монплезире.",
@@ -686,15 +671,15 @@ body {
             },
             {
                 title: "Вешний царский поезд на богомолье",
-                artist: "В.Г. Шварц",
+                artist: "В. Г. Шварц",
                 year: "1860",
-                genre: "Историческая живопись",
+                genre: "Исторический жанр",
                 description: "Пышная процессия XVII века. Царь Алексей Михайлович.",
                 image: "https://upload.wikimedia.org/wikipedia/commons/4/47/Шварц_Вешний_поезд_царицы_на_богомолье.jpg?20110114110704"
             },
             {
                 title: "Портрет Ф.М. Достоевского",
-                artist: "В.Г. Перов",
+                artist: "В. Г. Перов",
                 year: "1870",
                 genre: "Портрет",
                 description: "Шедевр! Писатель в момент творчества, напряжённая духовная работа.",
@@ -702,23 +687,23 @@ body {
             },
             {
                 title: "Охотники на привале",
-                artist: "В.Г. Перов",
+                artist: "В. Г. Перов",
                 year: "1870",
-                genre: "Жанровая живопись",
+                genre: "",
                 description: "Рассказывание небылиц. Юмор и психологизм.",
                 image: "https://cdn.tretyakov.ru/mytretyakov/24/cbb1b6f2410457cc5b771b8827a38822/thumb/6b1fcaea8aa6806b19b8b8915c193a43_x1.jpg"
             },
             {
                 title: "Проводы покойника",
-                artist: "В.Г. Перов",
+                artist: "В. Г. Перов",
                 year: "1860",
-                genre: "Жанровая живопись",
+                genre: "",
                 description: "Вдова с детьми в санях. Трагедия крестьянской семьи.",
                 image: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Проводы_покойника.jpg/1200px-Проводы_покойника.jpg?20071126142427"
             },
             {
                 title: "Портрет Л.Н. Толстого",
-                artist: "И.Н. Крамской",
+                artist: "И. Н. Крамской",
                 year: "1870",
                 genre: "Портрет",
                 description: "Писатель-мыслитель с пристальным взглядом.",
@@ -726,7 +711,7 @@ body {
             },
             {
                 title: "Апофеоз войны",
-                artist: "В.В. Верещагин",
+                artist: "В. В. Верещагин",
                 year: "1870",
                 genre: "Батальная живопись",
                 description: "Пирамида черепов в пустыне. Посвящается всем великим завоевателям.",
@@ -734,7 +719,7 @@ body {
             },
             {
                 title: "Фрина на празднике Посейдона",
-                artist: "Г.И. Семирадский",
+                artist: "Г. И. Семирадский",
                 year: "1880",
                 genre: "Академическая живопись",
                 description: "Шедевр салонного искусства. Греческая гетера обнажается перед толпой.",
@@ -742,7 +727,7 @@ body {
             },
             {
                 title: "Грешница",
-                artist: "Г.И. Семирадский",
+                artist: "Г. И. Семирадский",
                 year: "1870",
                 genre: "Академическая живопись",
                 description: "Золотая медаль на выставке в Вене. Евангельский сюжет как античная сцена.",
@@ -750,23 +735,23 @@ body {
             },
             {
                 title: "Боярский свадебный пир в XVII столетии",
-                artist: "К.Е. Маковский",
+                artist: "К. Е. Маковский",
                 year: "1880",
-                genre: "Историческая живопись",
+                genre: "",
                 description: "Роскошный пир, костюмы, декоративность.",
                 image: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/A_Boyar_Wedding_Feast_%28Konstantin_Makovsky%2C_1883%29_Google_Cultural_Institute.jpg/1280px-A_Boyar_Wedding_Feast_%28Konstantin_Makovsky%2C_1883%29_Google_Cultural_Institute.jpg?20151021230215"
             },
             {
                 title: "Крах банка",
-                artist: "В.Е. Маковский",
+                artist: "В. Е. Маковский",
                 year: "1880",
-                genre: "Жанровая живопись",
+                genre: "",
                 description: "Панорама социальной катастрофы.",
                 image: "https://upload.wikimedia.org/wikipedia/commons/8/85/Vladimir_Makovsky_-_Bankruptcy.JPG?20111023204657"
             },
             {
                 title: "Сельский крестный ход на Пасхе",
-                artist: "В.Г. Перов",
+                artist: "В. Г. Перов",
                 year: "1860",
                 genre: "Бытовой жанр",
                 description: "Острая сатира на духовенство и невежество. Реализм без прикрас.",
@@ -774,7 +759,7 @@ body {
             },
             {
                 title: "Портрет композитора А.Г. Рубинштейна",
-                artist: "И.Е. Репин",
+                artist: "И. Е. Репин",
                 year: "1880",
                 genre: "Портрет",
                 description: "Творческое вдохновение композитора.",
@@ -782,7 +767,7 @@ body {
             },
             {
                 title: "Портрет В.В. Стасова",
-                artist: "И.Е. Репин",
+                artist: "И. Е. Репин",
                 year: "1880",
                 genre: "Портрет",
                 description: "Энергия и темперамент критика.",
@@ -790,7 +775,7 @@ body {
             },
             {
                 title: "Бабушкин сад",
-                artist: "В.Д. Поленов",
+                artist: "В. Д. Поленов",
                 year: "1870",
                 genre: "Пейзаж",
                 description: "Элегия уходящего дворянства.",
@@ -798,15 +783,15 @@ body {
             },
             {
                 title: "Христос и грешница",
-                artist: "В.Д. Поленов",
+                artist: "В. Д. Поленов",
                 year: "1880",
-                genre: "Религиозная живопись",
+                genre: "",
                 description: "Археологическая достоверность в изображении.",
                 image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Wassilij_Dimitriewitsch_Polenow_005.jpg/1280px-Wassilij_Dimitriewitsch_Polenow_005.jpg?20070412095636"
             },
             {
                 title: "Заросший пруд",
-                artist: "В.Д. Поленов",
+                artist: "В. Д. Поленов",
                 year: "1870",
                 genre: "Пейзаж",
                 description: "Лирический интимный пейзаж.",
@@ -814,15 +799,15 @@ body {
             },
             {
                 title: "Витязь на распутье",
-                artist: "В.М. Васнецов",
+                artist: "В. М. Васнецов",
                 year: "1880",
-                genre: "Историческая живопись",
+                genre: "Исторический жанр",
                 description: "Богатырь у камня с надписью.",
                 image: "https://rusmuseumvrm.ru/data/collections/painting/19_20/zh_4214/2146_mainfoto_03.jpg"
             },
             {
                 title: "После побоища Игоря Святославича с половцами",
-                artist: "В.М. Васнецов",
+                artist: "В. М. Васнецов",
                 year: "1880",
                 genre: "Исторический жанр",
                 description: "По 'Слову о полку Игореве'.",
@@ -830,7 +815,7 @@ body {
             },
             {
                 title: "Владимирка",
-                artist: "И.И. Левитан",
+                artist: "И. И. Левитан",
                 year: "1890",
                 genre: "Пейзаж",
                 description: "Дорога каторжан в Сибирь. Серое небо, распятие.",
@@ -838,7 +823,7 @@ body {
             },
             {
                 title: "Сосновый бор. Мачтовый лес",
-                artist: "И.И. Шишкин",
+                artist: "И. И. Шишкин",
                 year: "1870",
                 genre: "Пейзаж",
                 description: "Могучие стволы сосен.",
@@ -846,17 +831,17 @@ body {
             },
             {
                 title: "Неравный брак",
-                artist: "В.В. Пукирев",
+                artist: "В. В. Пукирев",
                 year: "1860",
-                genre: "Жанровая живопись",
+                genre: "Бытовой жанр",
                 description: "Старик и молодая невеста. Социальная критика.",
                 image: "https://cdn.tretyakov.ru/mytretyakov/24/055ed7df90f2de15e936c9265a46a92b/thumb/fd3dad51304f5ff120abce31ca350f35_x1.jpg"
             },
             {
                 title: "Торг",
-                artist: "Н.В. Неврев",
+                artist: "Н. В. Неврев",
                 year: "1860",
-                genre: "Жанровая живопись",
+                genre: "Бытовой жанр",
                 description: "Продажа крепостной. Обличение крепостничества.",
                 image: "https://cdn.tretyakov.ru/mytretyakov/24/f048026e0445d23c46cd7b5d5aee0c53/thumb/d07eddbd1408ac8e47e709bdf2f0295a_x1.jpg"
             },
@@ -864,7 +849,7 @@ body {
                 title: "Запорожцы пишут письмо турецкому султану",
                 artist: "И. Е. Репин",
                 year: "1890",
-                genre: "Историческая живопись",
+                genre: "Исторический жанр",
                 description: "Гимн свободе и смеху. Яркие характеры, народный дух.",
                 image: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Ilja_Jefimowitsch_Repin_-_Reply_of_the_Zaporozhian_Cossacks_-_Yorck.jpg/1280px-Ilja_Jefimowitsch_Repin_-_Reply_of_the_Zaporozhian_Cossacks_-_Yorck.jpg"
             },
@@ -872,7 +857,7 @@ body {
                 title: "«Крестный ход в Курской губернии»",
                 artist: "И. Е. Репин",
                 year: "1880",
-                genre: "Жанровая живопись",
+                genre: "",
                 description: "",
                 image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Ilya_Repin_-_Крестный_ход_в_Курской_губернии_-_Google_Art_Project.jpg/1280px-Ilya_Repin_-_Крестный_ход_в_Курской_губернии_-_Google_Art_Project.jpg"
             },
@@ -880,7 +865,7 @@ body {
                 title: "Иван Грозный и сын его Иван",
                 artist: "И. Е. Репин",
                 year: "1880",
-                genre: "Историческая живопись",
+                genre: "Исторический жанр",
                 description: "Трагедия отцовства, ужас содеянного, психологический накал.",
                 image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Iván_el_Terrible_y_su_hijo%2C_por_Iliá_Repin.jpg/1280px-Iván_el_Terrible_y_su_hijo%2C_por_Iliá_Repin.jpg"
             },
@@ -896,7 +881,7 @@ body {
                 title: "«Садко»",
                 artist: "И. Е. Репин",
                 year: "1870",
-                genre: "Жанровая живопись",
+                genre: "",
                 description: "",
                 image: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Ilya_Repin_-_Sadko_-_Google_Art_Project_levels_adjustment_2.jpg/960px-Ilya_Repin_-_Sadko_-_Google_Art_Project_levels_adjustment_2.jpg"
             },
@@ -920,7 +905,7 @@ body {
                 title: "Какой простор",
                 artist: "И. Е. Репин",
                 year: "1900",
-                genre: "Жанровая живопись",
+                genre: "",
                 description: "",
                 image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Илья_Репин_-_Какой_простор.jpg/1280px-Илья_Репин_-_Какой_простор.jpg"
             },
@@ -942,7 +927,7 @@ body {
             },
             {
                 title: "Осмотр старого дома",
-                artist: "И.Н. Крамской",
+                artist: "И. Н. Крамской",
                 year: "1870",
                 genre: "Бытовой жанр",
                 description: "Тема угасания дворянских гнёзд. Философское размышление о времени.",
@@ -950,7 +935,7 @@ body {
             },
             {
                 title: "Взятие снежного городка",
-                artist: "В.И. Суриков",
+                artist: "В. И. Суриков",
                 year: "1890",
                 genre: "Бытовой жанр",
                 description: "Сибирская народная игра. Жизнерадостность, динамика, яркие краски.",
@@ -958,7 +943,7 @@ body {
             },
             {
                 title: "Золотая осень",
-                artist: "В.Д. Поленов",
+                artist: "В. Д. Поленов",
                 year: "1890",
                 genre: "Пейзаж",
                 description: "Жизнеутверждающий образ Оки. Яркие краски осени, широта русских просторов.",
@@ -966,7 +951,7 @@ body {
             },
             {
                 title: "Смертельно раненный",
-                artist: "В.В. Верещагин",
+                artist: "В. В. Верещагин",
                 year: "1870",
                 genre: "Батальный жанр",
                 description: "Одиночество смерти. Бессмысленность жертв войны.",
@@ -974,7 +959,7 @@ body {
             },
             {
                 title: "Украинская ночь",
-                artist: "А.И. Куинджи",
+                artist: "А. И. Куинджи",
                 year: "1870",
                 genre: "Пейзаж",
                 description: "Бархатная синева ночи, поэтичность украинской природы.",
@@ -982,15 +967,15 @@ body {
             },
             {
                 title: "Неутешное горе",
-                artist: "И.Н. Крамской",
+                artist: "И. Н. Крамской",
                 year: "1880",
-                genre: "Портрет-картина",
+                genre: "Портрет",
                 description: "Мать, потерявшая ребёнка. Глубокий психологизм и сдержанность эмоций.",
                 image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Ivan_Nikolayevich_Kramskoi_-_Inconsolable_grief%2C_1884.jpg/620px-Ivan_Nikolayevich_Kramskoi_-_Inconsolable_grief%2C_1884.jpg?20111019001017"
             },
             {
                 title: "Просёлок",
-                artist: "А.К. Саврасов",
+                artist: "А. К. Саврасов",
                 year: "1870",
                 genre: "Пейзаж",
                 description: "Размытая дождём дорога, грязь, но с невероятно эмоциональным, сложным небом.",
@@ -998,7 +983,7 @@ body {
             },
             {
                 title: "На бульваре",
-                artist: "В.Е. Маковский",
+                artist: "В. Е. Маковский",
                 year: "1880",
                 genre: "Бытовой жанр",
                 description: "Москва. Пьяный мастеровой играет на гармони, рядом растерянная жена с ребенком.",
@@ -1006,7 +991,7 @@ body {
             },
             {
                 title: "Дети, бегущие от грозы",
-                artist: "К.Е. Маковский",
+                artist: "К. Е. Маковский",
                 year: "1870",
                 genre: "Бытовой жанр",
                 description: "Тревога перед грозой, динамика, романтизация крестьянского быта.",
@@ -1014,7 +999,7 @@ body {
             },
             {
                 title: "Всюду жизнь",
-                artist: "Н.А. Ярошенко",
+                artist: "Н. А. Ярошенко",
                 year: "1880",
                 genre: "Бытовой жанр",
                 description: "Арестантский вагон. Гуманизм, утверждение, что человечность сохраняется везде.",
@@ -1022,23 +1007,23 @@ body {
             },
              {
                 title: "Светочи христианства (Факелы Нерона)",
-                artist: "Г.И. Семирадский",
+                artist: "Г. И. Семирадский",
                 year: "1870",
-                genre: "Исторический/Академизм",
+                genre: "Академическая живопись",
                 description: "Масштабное полотно. Контраст жестокости сюжета и внешней красоты живописи.",
                 image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Siemiradski_Fackeln.jpg/1280px-Siemiradski_Fackeln.jpg?20230315140109"
             },
             {
                 title: "Кочегар",
-                artist: "Н.А. Ярошенко",
+                artist: "Н. А. Ярошенко",
                 year: "1870",
                 genre: "Портрет",
                 description: "Образ рабочего человека. Труд, опаливший лицо и руки. Реализм без прикрас.",
-                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/1878._Nikolaj_Alexandrowitsch_Jaroschenko_005.jpg/833px-1878._Nikolaj_Alexandrowitsch_Jaroschenko_005.jpg?20071130101120"
+                image: "16.%20Эволюция%20жанровой%20живописи%20во%20второй%20половине%20XIX%20века/29.%20Ярошенко.%20Кочегар.%201878.jpg"
             },
             {
                 title: "Покорение Сибири Ермаком Тимофеевичем",
-                artist: "В.И. Суриков",
+                artist: "В. И. Суриков",
                 year: "1890",
                 genre: "Исторический жанр",
                 description: "Столкновение двух цивилизаций. Эпическая битва, динамика и слияние войска в единую массу.",
@@ -1046,15 +1031,15 @@ body {
             },
             {
                 title: "Иван-царевич на Сером Волке",
-                artist: "В.М. Васнецов",
+                artist: "В. М. Васнецов",
                 year: "1880",
-                genre: "Сказочный жанр",
+                genre: "",
                 description: "Романтика волшебной сказки. Таинственный лес, тревога и надежда героев.",
                 image: "https://cdn.tretyakov.ru/mytretyakov/23/e418cc0a08390937f2c3c0cc501a6a09/thumb/cc295912da04b0f367ee4f04cce95a07_x1.jpg"
             },
             {
                 title: "Земство обедает",
-                artist: "Г.Г. Мясоедов",
+                artist: "Г. Г. Мясоедов",
                 year: "1870",
                 genre: "Бытовой жанр",
                 description: "Социальный контраст: крестьяне едят хлеб с луком у порога, пока дворяне обедают в доме.",
@@ -1062,7 +1047,7 @@ body {
             },
             {
                 title: "Всё в прошлом",
-                artist: "В.М. Максимов",
+                artist: "В. М. Максимов",
                 year: "1880",
                 genre: "Бытовой жанр",
                 description: "Ностальгия по уходящей дворянской эпохе. Старая барыня и служанка на фоне разрушающейся усадьбы.",
@@ -1070,7 +1055,7 @@ body {
             },
             {
                 title: "Ремонтные работы на железной дороге",
-                artist: "К.А. Савицкий",
+                artist: "К. А. Савицкий",
                 year: "1870",
                 genre: "Бытовой жанр",
                 description: "Тяжелый коллективный труд. Картина, которую Третьяков купил, но она не понравилась императору.",
@@ -1078,7 +1063,7 @@ body {
             },
             {
                 title: "Курсистка",
-                artist: "Н.А. Ярошенко",
+                artist: "Н. А. Ярошенко",
                 year: "1880",
                 genre: "Портрет",
                 description: "Образ «новой женщины» 1880-х. Студентка с книгами, идущая наперекор ветру.",
@@ -1086,7 +1071,7 @@ body {
             },
             {
                 title: "Привал арестантов",
-                artist: "В.И. Якоби",
+                artist: "В. И. Якоби",
                 year: "1860",
                 genre: "Бытовой жанр",
                 description: "Картина-манифест начала 60-х. Реалистичное изображение страданий ссыльных.",
@@ -1094,7 +1079,7 @@ body {
             },
             {
                 title: "Шутники. Гостиный двор в Москве",
-                artist: "И.М. Прянишников",
+                artist: "И. М. Прянишников",
                 year: "1860",
                 genre: "Бытовой жанр",
                 description: "Жестокие нравы купечества. Издевательство над бедным чиновником.",
@@ -1102,7 +1087,7 @@ body {
             },
             {
                 title: "Княжна Тараканова",
-                artist: "К.Д. Флавицкий",
+                artist: "К. Д. Флавицкий",
                 year: "1860",
                 genre: "Исторический жанр",
                 description: "Романтическая трагедия. Гибель узницы в Петропавловской крепости во время наводнения.",
@@ -1110,31 +1095,31 @@ body {
             },
             {
                 title: "Видение отроку Варфоломею",
-                artist: "М.В. Нестеров",
+                artist: "М. В. Нестеров",
                 year: "1890",
-                genre: "Историко-религиозный",
+                genre: "",
                 description: "Начало русского символизма. Духовность, тихий пейзаж, святость (будущий Сергий Радонежский).",
                 image: "https://cdn.tretyakov.ru/mytretyakov/26/8a8aac897dc68780e04bb3c056a99c68/thumb/99837ce480a42d0a8de8cfa3b5467843_x1.jpg"
             },
             {
                 title: "Девятый вал",
-                artist: "И.К. Айвазовский",
+                artist: "И. К. Айвазовский",
                 year: "1850",
-                genre: "Марина (морской пейзаж)",
+                genre: "Пейзаж",
                 description: "Романтический шедевр. Борьба человека со стихией, величие моря и надежда на спасение.",
                 image: "https://rusmuseumvrm.ru/data/collections/painting/18_19/zh_2202/2141_mainfoto_03.jpg"
             },
             {
                 title: "Черное море",
-                artist: "И.К. Айвазовский",
+                artist: "И. К. Айвазовский",
                 year: "1880",
-                genre: "Марина (морской пейзаж)",
+                genre: "Пейзаж",
                 description: "Реалистический период творчества. «На море дух божий носится» (Крамской). Суровая мощь стихии.",
                 image: "https://cdn.tretyakov.ru/mytretyakov/23/526c55fb343623f860500fe98a7f3f0d/thumb/0d9b35809f42833ad511b1d950661b76_x1.jpg"
             },
             {
                 title: "Встреча иконы",
-                artist: "К.А. Савицкий",
+                artist: "К. А. Савицкий",
                 year: "1870",
                 genre: "Бытовой жанр",
                 description: "Массовая сцена народной жизни. Искренняя вера крестьян и разнообразие типов.",
@@ -1142,7 +1127,7 @@ body {
             },
             {
                 title: "Смерть переселенца",
-                artist: "С.В. Иванов",
+                artist: "С. В. Иванов",
                 year: "1880",
                 genre: "Бытовой жанр",
                 description: "Трагедия крестьянского переселения. Одиночество, пустынный пейзаж, безысходность.",
@@ -1150,7 +1135,7 @@ body {
             },
             {
                 title: "Арест пропагандиста",
-                artist: "И.Е. Репин",
+                artist: "И. Е. Репин",
                 year: "1890",
                 genre: "Бытовой жанр",
                 description: "Тема революционного движения. Психологическое противостояние героя и окружающих.",
@@ -1158,7 +1143,7 @@ body {
             },
             {
                 title: "Больной муж",
-                artist: "В.М. Максимов",
+                artist: "В. М. Максимов",
                 year: "1880",
                 genre: "Бытовой жанр",
                 description: "Крестьянская изба, болезнь кормильца. Правдивое изображение народного горя.",
@@ -1294,19 +1279,11 @@ body {
             },
             {
                 title: "Боярыня Морозова",
-                artist: "Литовченко",
+                artist: "А. Д. Литовченко",
                 year: "",
                 genre: "Исторический жанр",
                 description: "",
                 image: "11.%20Герой%20и%20антигерой%20в%20русской%20живописи%20вт.%20п.%20XIX%20в./Литовченко.%20Боярыня%20Морозова.jpg"
-            },
-            {
-                title: "Дворник, отдающий квартиру барыне",
-                artist: "В. Г. Перов",
-                year: "",
-                genre: "Бытовой жанр",
-                description: "",
-                image: "11.%20Герой%20и%20антигерой%20в%20русской%20живописи%20вт.%20п.%20XIX%20в./Перов.%20Дворник%2C%20отдающий%20квартиру%20барыне.jpg"
             },
             {
                 title: "Монастырская трапеза",
@@ -1350,7 +1327,7 @@ body {
             },
             {
                 title: "Семья купца в 17 веке",
-                artist: "Рябушкин",
+                artist: "А. П. Рябушкин",
                 year: "1890",
                 genre: "",
                 description: "",
@@ -1382,7 +1359,7 @@ body {
             },
             {
                 title: "Дети Иакова продают своего брата Иосифа в рабство",
-                artist: "Флафицкий",
+                artist: "К. Д. Флафицкий",
                 year: "1850",
                 genre: "Академическая живопись",
                 description: "",
@@ -1390,7 +1367,7 @@ body {
             },
             {
                 title: "Мученики в Колизее",
-                artist: "Флафицкий",
+                artist: "К. Д. Флафицкий",
                 year: "1860",
                 genre: "Академическая живопись",
                 description: "",
@@ -1406,7 +1383,7 @@ body {
             },
             {
                 title: "Иван Грозный у тела убитого им сына",
-                artist: "Шварц",
+                artist: "В. Г. Шварц",
                 year: "1860",
                 genre: "Исторический жанр",
                 description: "",
@@ -1414,7 +1391,7 @@ body {
             },
             {
                 title: "Террористы и умеренные первой французской революции",
-                artist: "Якоби В. И.",
+                artist: "В. И. Якоби",
                 year: "1860",
                 genre: "Исторический жанр",
                 description: "",
@@ -1422,7 +1399,7 @@ body {
             },
             {
                 title: "Осень",
-                artist: "Якоби В. И.",
+                artist: "В. И. Якоби",
                 year: "1860",
                 genre: "",
                 description: "",
@@ -1515,14 +1492,6 @@ body {
                 genre: "Бытовой жанр",
                 description: "",
                 image: "12.%20Творчество%20Л.%20И.%20Соломаткина/Соломаткин.%201882.%20%20Любители%20пения.jpg"
-            },
-            {
-                title: "Нужда скачет, нужда плачет",
-                artist: "Л. И. Соломаткин",
-                year: "1870",
-                genre: "Бытовой жанр",
-                description: "",
-                image: "12.%20Творчество%20Л.%20И.%20Соломаткина/Соломаткин.%201870.%20Нужда%20скачет%2C%20нужда%20плачет….jpg"
             },
             {
                 title: "Книжная лавочка",
@@ -1965,14 +1934,6 @@ body {
                 image: "15.%20Творчество.%20И.%20И.%20Шишкина/Шишкин.%201859.%20Вид%20на%20острове%20Валааме%20(Местность%20Кукко).jpg"
             },
             {
-                title: "Ивы, освещенные солнцем",
-                artist: "И. И. Шишкин",
-                year: "",
-                genre: "Пейзаж",
-                description: "",
-                image: "15.%20Творчество.%20И.%20И.%20Шишкина/Шишкин.%201860-70.%20Ивы%2C%20освещенные%20солнцем.jpg"
-            },
-            {
                 title: "Крестовский остров в тумане",
                 artist: "И. И. Шишкин",
                 year: "",
@@ -1987,14 +1948,6 @@ body {
                 genre: "Пейзаж",
                 description: "",
                 image: "15.%20Творчество.%20И.%20И.%20Шишкина/Шишкин.%201860.%20Деревенский%20двор.jpg"
-            },
-            {
-                title: "Буковый лес в Швейцарии",
-                artist: "И. И. Шишкин",
-                year: "",
-                genre: "Пейзаж",
-                description: "",
-                image: "15.%20Творчество.%20И.%20И.%20Шишкина/Шишкин.%201863.%20Буковый%20лес%20в%20Швейцарии%20х%2Cм.jpg"
             },
             {
                 title: "В роще",
@@ -2277,14 +2230,6 @@ body {
                 image: "15.%20Творчество.%20И.%20И.%20Шишкина/Шишкин.%201886.%20Дубки.jpg"
             },
             {
-                title: "Сосны, освещенные солнцем",
-                artist: "И. И. Шишкин",
-                year: "",
-                genre: "Пейзаж",
-                description: "",
-                image: "15.%20Творчество.%20И.%20И.%20Шишкина/Шишкин.%201886.%20Сосны%2C%20освещенные%20солнцем.jpg"
-            },
-            {
                 title: "Дубовая роща",
                 artist: "И. И. Шишкин",
                 year: "",
@@ -2309,20 +2254,756 @@ body {
                 image: "15.%20Творчество.%20И.%20И.%20Шишкина/Шишкин.%201889.%20По%20берегу%20моря.jpg"
             },
             {
-                title: "Утро в сосновом лесу",
-                artist: "И. И. Шишкин",
-                year: "",
-                genre: "Пейзаж",
-                description: "Медведи Савицкого",
-                image: "15.%20Творчество.%20И.%20И.%20Шишкина/Шишкин.%201889.%20Шишкин%2C%20Савицкий.%20Утро%20в%20сосновом%20лесу.%20ГТГ.jpg"
-            },
-            {
                 title: "Зима",
                 artist: "И. И. Шишкин",
                 year: "",
                 genre: "Пейзаж",
                 description: "",
                 image: "15.%20Творчество.%20И.%20И.%20Шишкина/Шишкин.%201890.%20Зима.jpg"
+            },
+            {
+                title: "Ночлежники",
+                artist: "В. Е. Маковский",
+                year: "1880",
+                genre: "",
+                description: "",
+                image: "16.%20Эволюция%20жанровой%20живописи%20во%20второй%20половине%20XIX%20века/31.%20Маковский.%20Ночлежники.%201889.jpg"
+            },
+            {
+                title: "Отец благословляет дочь на брак в присутствии родных",
+                artist: "Чернышев",
+                year: "",
+                genre: "Бытовой жанр",
+                description: "",
+                image: "16.%20Эволюция%20жанровой%20живописи%20во%20второй%20половине%20XIX%20века/10.%20Чернышев.%20Отец%20благословляет%20дочь%20на%20брак%20в%20присутствии%20родных.jpg"
+            },
+            {
+                title: "Хоровод в Курской губернии",
+                artist: "Трутовский",
+                year: "1860",
+                genre: "Бытовой жанр",
+                description: "",
+                image: "16.%20Эволюция%20жанровой%20живописи%20во%20второй%20половине%20XIX%20века/11.%20Трутовский.%20Хоровод%20в%20Курской%20губернии.%201860.jpg"
+            },
+            {
+                title: "Светлое Воскресенье нищего",
+                artist: "В. И. Якоби",
+                year: "1860",
+                genre: "Бытовой жанр",
+                description: "",
+                image: "16.%20Эволюция%20жанровой%20живописи%20во%20второй%20половине%20XIX%20века/22.%20Якоби.%20Светлое%20Воскресенье%20нищего.%201860.jpg"
+            },
+            {
+                title: "Спасов день на севере",
+                artist: "И. М. Прянишников",
+                year: "1880",
+                genre: "",
+                description: "",
+                image: "16.%20Эволюция%20жанровой%20живописи%20во%20второй%20половине%20XIX%20века/24.%20Прянишников.%20Спасов%20день%20на%20севере.%201887..JPG"
+            },
+            {
+                title: "Крестный ход",
+                artist: "И. М. Прянишников",
+                year: "1890",
+                genre: "",
+                description: "",
+                image: "16.%20Эволюция%20жанровой%20живописи%20во%20второй%20половине%20XIX%20века/25.%20Прянишников.%20Крестный%20ход.%201893.jpg"
+            },
+            {
+                title: "Студент",
+                artist: "Н. А. Ярошенко",
+                year: "1880",
+                genre: "Портрет",
+                description: "",
+                image: "16.%20Эволюция%20жанровой%20живописи%20во%20второй%20половине%20XIX%20века/26.%20Ярошенко.%20Студент.%201881.jpg"
+            },
+            {
+                title: "Игра в шахматы",
+                artist: "В. Г. Шварц",
+                year: "1860",
+                genre: "",
+                description: "",
+                image: "17.%20Историческая%20картина%201860-х%20гг./Шварц.%20Игра%20в%20шахматы.%201865.%20ГРМ.jpg"
+            },
+            {
+                title: "Патриарх Никон в новом Иерусалиме",
+                artist: "В. Г. Шварц",
+                year: "",
+                genre: "",
+                description: "",
+                image: "17.%20Историческая%20картина%201860-х%20гг./Шварц.%20Патриарх%20Никон%20в%20новом%20Иерусалиме.jpg"
+            },
+            {
+                title: "Русский посол при дворе римского императора",
+                artist: "В. Г. Шварц",
+                year: "",
+                genre: "",
+                description: "",
+                image: "17.%20Историческая%20картина%201860-х%20гг./Шварц.%20Русский%20посол%20при%20дворе%20римского%20императора.jpg"
+            },
+            {
+                title: "Автопортрет",
+                artist: "И. Н. Крамской",
+                year: "1860",
+                genre: "Портрет",
+                description: "",
+                image: "18.%20Портреты%20И.%20Н.%20Крамского/Крамской.%201867.%20Автопортрет..jpg"
+            },
+            {
+                title: "Портрет Крестьянина",
+                artist: "И. Н. Крамской",
+                year: "1860",
+                genre: "Портрет",
+                description: "",
+                image: "18.%20Портреты%20И.%20Н.%20Крамского/Крамской.%201868.%20Портрет%20Крестьянина.jpg"
+            },
+            {
+                title: "Русалки",
+                artist: "И. Н. Крамской",
+                year: "1870",
+                genre: "",
+                description: "",
+                image: "18.%20Портреты%20И.%20Н.%20Крамского/Крамской.%201871.%20Русалки.jpg"
+            },
+            {
+                title: "Портрет А. И. Куинджи",
+                artist: "И. Н. Крамской",
+                year: "1870",
+                genre: "Портрет",
+                description: "",
+                image: "18.%20Портреты%20И.%20Н.%20Крамского/Крамской.%201872.%20Портрет%20А.%20И.%20Куинджи.jpg"
+            },
+            {
+                title: "Портрет В. М. Васнецова",
+                artist: "И. Н. Крамской",
+                year: "",
+                genre: "Портрет",
+                description: "",
+                image: "18.%20Портреты%20И.%20Н.%20Крамского/Крамской.%201874.%20Портрет%20Виктора%20Михайловича%20Васнецова%20(мокрый%20соус).jpg"
+            },
+            {
+                title: "Портрет певицы Е. А. Лавровской",
+                artist: "И. Н. Крамской",
+                year: "",
+                genre: "Портрет",
+                description: "",
+                image: "18.%20Портреты%20И.%20Н.%20Крамского/Крамской.%201879.%20Портрет%20певицы%20Елизаветы%20Андреевны%20Лавровской.jpg"
+            },
+            {
+                title: "Портрет астронома О. В. Струве",
+                artist: "И. Н. Крамской",
+                year: "1880",
+                genre: "Портрет",
+                description: "",
+                image: "18.%20Портреты%20И.%20Н.%20Крамского/Крамской.%201886.%20Портрет%20астронома%20О.%20В.%20Струве.jpg"
+            },
+            {
+                title: "Портрет Александра III",
+                artist: "И. Н. Крамской",
+                year: "1880",
+                genre: "Портрет",
+                description: "",
+                image: "18.%20Портреты%20И.%20Н.%20Крамского/Крамской.%201886.%20Портрет%20Александра%20III.jpg"
+            },
+            {
+                title: "Портрет писателя и публициста А. С. Суворина",
+                artist: "И. Н. Крамской",
+                year: "1880",
+                genre: "Портрет",
+                description: "",
+                image: "18.%20Портреты%20И.%20Н.%20Крамского/Крамской.%201881.%20Портрет%20писателя%20и%20публициста%20А.%20С.%20Суворина.jpg"
+            },
+            {
+                title: "Воскрешение дочери Иаира",
+                artist: "И. Е. Репин",
+                year: "",
+                genre: "",
+                description: "",
+                image: "19.%20Работы%20И.Е.%20Репина%20в%20ГРМ/1.%20Воскрешение%20дочери%20Иаира.jpg"
+            },
+            {
+                title: "Портрет Драгомировой",
+                artist: "И. Е. Репин",
+                year: "",
+                genre: "Портрет",
+                description: "",
+                image: "19.%20Работы%20И.Е.%20Репина%20в%20ГРМ/10.%20Портрет%20Драгомировой.jpg"
+            },
+            {
+                title: "Проводы новобранца",
+                artist: "И. Е. Репин",
+                year: "",
+                genre: "",
+                description: "",
+                image: "19.%20Работы%20И.Е.%20Репина%20в%20ГРМ/12.%20Проводы%20новобранца.jpg"
+            },
+            {
+                title: "Л. Н. Толстой босой",
+                artist: "И. Е. Репин",
+                year: "",
+                genre: "Портрет",
+                description: "",
+                image: "19.%20Работы%20И.Е.%20Репина%20в%20ГРМ/14.%20Л.%20Н.%20Толстой%20босой.jpg"
+            },
+            {
+                title: "Торжественное заседание Госсовета",
+                artist: "И. Е. Репин",
+                year: "",
+                genre: "",
+                description: "",
+                image: "19.%20Работы%20И.Е.%20Репина%20в%20ГРМ/15.%20Торжественное%20заседание%20Госсовета.jpg"
+            },
+            {
+                title: "В волостном правлении",
+                artist: "И. Е. Репин",
+                year: "",
+                genre: "",
+                description: "",
+                image: "19.%20Работы%20И.Е.%20Репина%20в%20ГРМ/3.%20В%20волостном%20правлении.jpg"
+            },
+            {
+                title: "Приготовление к экзамену",
+                artist: "И. Е. Репин",
+                year: "",
+                genre: "",
+                description: "",
+                image: "19.%20Работы%20И.Е.%20Репина%20в%20ГРМ/5.%20Приготовление%20к%20экзамену.jpg"
+            },
+            {
+                title: "Портрет Веры Шевцовой",
+                artist: "И. Е. Репин",
+                year: "",
+                genre: "",
+                description: "",
+                image: "19.%20Работы%20И.Е.%20Репина%20в%20ГРМ/7.%20Портрет%20Веры%20Шевцовой.jpg"
+            },
+            {
+                title: "На дерневой скамье",
+                artist: "И. Е. Репин",
+                year: "",
+                genre: "",
+                description: "",
+                image: "19.%20Работы%20И.Е.%20Репина%20в%20ГРМ/8.%20На%20дерневой%20скамье.jpg"
+            },
+            {
+                title: "Николай Мирликийский избавляет от смерти трех невинно осужденных",
+                artist: "И. Е. Репин",
+                year: "",
+                genre: "",
+                description: "",
+                image: "19.%20Работы%20И.Е.%20Репина%20в%20ГРМ/9.%20Николай%20Мирликийский%20избавляет%20от%20смерти%20трех%20невинно%20осужденных.jpg"
+            },
+            {
+                title: "Портрет императора Николая II",
+                artist: "И. Е. Репин",
+                year: "",
+                genre: "Портрет",
+                description: "",
+                image: "19.%20Работы%20И.Е.%20Репина%20в%20ГРМ/Портрет-императора-Николая-II.-1896.jpg"
+            },
+            {
+                title: "Три поколения",
+                artist: "В. Е. Маковский",
+                year: "",
+                genre: "",
+                description: "",
+                image: "2.%20Творчество%20В.%20Е.%20Маковского/В.%20Е.%20Маковский.%20Три%20поколения.jpg"
+            },
+            {
+                title: "Игра в бабки",
+                artist: "В. Е. Маковский",
+                year: "",
+                genre: "",
+                description: "",
+                image: "2.%20Творчество%20В.%20Е.%20Маковского/Игра%20в%20бабки.jpg"
+            },
+            {
+                title: "Христос",
+                artist: "В. Е. Маковский",
+                year: "",
+                genre: "",
+                description: "",
+                image: "2.%20Творчество%20В.%20Е.%20Маковского/Христос.jpg"
+            },
+            {
+                title: "Беседа",
+                artist: "В. Е. Маковский",
+                year: "",
+                genre: "",
+                description: "",
+                image: "2.%20Творчество%20В.%20Е.%20Маковского/беседа.jpg"
+            },
+            {
+                title: "В жаркий день",
+                artist: "В. Е. Маковский",
+                year: "",
+                genre: "",
+                description: "",
+                image: "2.%20Творчество%20В.%20Е.%20Маковского/в%20жаркий%20день.jpg"
+            },
+            {
+                title: "В приемной у доктора",
+                artist: "В. Е. Маковский",
+                year: "",
+                genre: "",
+                description: "",
+                image: "2.%20Творчество%20В.%20Е.%20Маковского/в%20приемной%20у%20доктора.jpg"
+            },
+            {
+                title: "Вечеринка",
+                artist: "В. Е. Маковский",
+                year: "",
+                genre: "",
+                description: "",
+                image: "2.%20Творчество%20В.%20Е.%20Маковского/вечеринка.jpg"
+            },
+            {
+                title: "Гадалка",
+                artist: "В. Е. Маковский",
+                year: "",
+                genre: "",
+                description: "",
+                image: "2.%20Творчество%20В.%20Е.%20Маковского/гадалка.jpg"
+            },
+            {
+                title: "Семья художника",
+                artist: "В. Е. Маковский",
+                year: "",
+                genre: "",
+                description: "",
+                image: "2.%20Творчество%20В.%20Е.%20Маковского/деспот%20семьи.jpg"
+            },
+            {
+                title: "За чайным столом",
+                artist: "В. Е. Маковский",
+                year: "",
+                genre: "",
+                description: "",
+                image: "2.%20Творчество%20В.%20Е.%20Маковского/за%20чайным%20столом.jpg"
+            },
+            {
+                title: "Объяснение",
+                artist: "В. Е. Маковский",
+                year: "",
+                genre: "",
+                description: "",
+                image: "2.%20Творчество%20В.%20Е.%20Маковского/объяснение.jpg"
+            },
+            {
+                title: "Оправдана",
+                artist: "В. Е. Маковский",
+                year: "",
+                genre: "",
+                description: "",
+                image: "2.%20Творчество%20В.%20Е.%20Маковского/оправдана.webp"
+            },
+            {
+                title: "Осужденный",
+                artist: "В. Е. Маковский",
+                year: "",
+                genre: "",
+                description: "",
+                image: "2.%20Творчество%20В.%20Е.%20Маковского/осужденный.jpg"
+            },
+            {
+                title: "Скряга",
+                artist: "В. Е. Маковский",
+                year: "",
+                genre: "",
+                description: "",
+                image: "2.%20Творчество%20В.%20Е.%20Маковского/скряга.jpg"
+            },
+            {
+                title: "Узник",
+                artist: "В. Е. Маковский",
+                year: "",
+                genre: "",
+                description: "",
+                image: "2.%20Творчество%20В.%20Е.%20Маковского/узник.jpg"
+            },
+            {
+                title: "Рыболов",
+                artist: "В. Г. Перов",
+                year: "",
+                genre: "",
+                description: "1-ая передвижная выставка",
+                image: "20.%20Товарищество%20передвижных%20выставок.%20История%20и%20значение/I%20выставка%20(1871)/В.%20Перов.%20Рыболов.jpg"
+            },
+            {
+                title: "Порожняки",
+                artist: "И. М. Прянишников",
+                year: "",
+                genre: "",
+                description: "1-ая передвижная выставка",
+                image: "20.%20Товарищество%20передвижных%20выставок.%20История%20и%20значение/I%20выставка%20(1871)/И.%20Прянишников.%20Порожняки.jpg"
+            },
+            {
+                title: "Семейный раздел",
+                artist: "В. М. Максимов",
+                year: "",
+                genre: "",
+                description: "",
+                image: "20.%20Товарищество%20передвижных%20выставок.%20История%20и%20значение/V%20выставка%20(1876)/В.%20Максимов.%20Семейный%20раздел.jpg"
+            },
+            {
+                title: "Озеро Ильмень",
+                artist: "Н. Н. Дубовской",
+                year: "",
+                genre: "",
+                description: "",
+                image: "20.%20Товарищество%20передвижных%20выставок.%20История%20и%20значение/Дубовской%20Н.%20Н.%20«Озеро%20Ильмень».%201891%20г.jpg"
+            },
+            {
+                title: "Ребятишки – рыбачки",
+                artist: "И. М. Прянишников",
+                year: "",
+                genre: "",
+                description: "",
+                image: "20.%20Товарищество%20передвижных%20выставок.%20История%20и%20значение/Прянишников%20И.%20М.%20«Ребятишки%20–%20рыбачки».%201882%20г.jpg"
+            },
+            {
+                title: "Генерал М. Д. Скобелев на коне",
+                artist: "В. В. Верещагин",
+                year: "",
+                genre: "",
+                description: "",
+                image: "8.%20Верещагин/«Генерал%20М.%20Д.%20Скобелев%20на%20коне»%20(серия%20турецкой%20войны).jpg"
+            },
+            {
+                title: "Буддийский лама в костюме Главного Божества на празднике в монастыре Пемиончи",
+                artist: "В. В. Верещагин",
+                year: "",
+                genre: "",
+                description: "",
+                image: "8.%20Верещагин/Буддийский%20лама%20в%20костюме%20Главного%20Божества%20на%20празднике%20в%20монастыре%20Пемиончи%20(индийская%20серия).jpg"
+            },
+            {
+                title: "Двери Тимура (Тамерлана)",
+                artist: "В. В. Верещагин",
+                year: "",
+                genre: "",
+                description: "",
+                image: "8.%20Верещагин/Двери_Тимура_(Тамерлана)%20(Туркмен%20серия).jpg"
+            },
+            {
+                title: "Казнь заговорщиков в России",
+                artist: "В. В. Верещагин",
+                year: "",
+                genre: "",
+                description: "",
+                image: "8.%20Верещагин/Казнь%20заговорщиков%20в%20России%20(серия%20Казни).jpg"
+            },
+            {
+                title: "Русский лагерь в Туркестане",
+                artist: "В. В. Верещагин",
+                year: "",
+                genre: "",
+                description: "",
+                image: "8.%20Верещагин/Русский%20лагерь%20в%20Туркестане.png"
+            },
+            {
+                title: "Вдовушка",
+                artist: "К. Е. Маковский",
+                year: "",
+                genre: "",
+                description: "",
+                image: "34.%20Творчество%20К.%20Маковского/1.%20К.%20Маковский.%20Вдовушка.%201865.jpg"
+            },
+            {
+                title: "Маленькие шарманщики у забора зимой",
+                artist: "К. Е. Маковский",
+                year: "",
+                genre: "",
+                description: "",
+                image: "34.%20Творчество%20К.%20Маковского/2.%20К.%20Маковский.%20Маленькие%20шарманщики%20у%20забора%20зимой.%201868.jpg"
+            },
+            {
+                title: "Народное гулянье во время Масленицы на Адмиралтейской площади в Петербурге",
+                artist: "К. Е. Маковский",
+                year: "",
+                genre: "",
+                description: "",
+                image: "34.%20Творчество%20К.%20Маковского/3.%20К.%20Маковский.%20Народное%20гулянье%20во%20время%20Масленицы%20на%20Адмиралтейской%20площади%20в%20Петербурге.%201869.jpg"
+            },
+            {
+                title: "Перенесение священного ковра из Мекки в Каир",
+                artist: "К. Е. Маковский",
+                year: "",
+                genre: "",
+                description: "",
+                image: "34.%20Творчество%20К.%20Маковского/5.%20К.%20Маковский.%20Перенесение%20священного%20ковра%20из%20Мекки%20в%20Каир.jpg"
+            },
+            {
+                title: "Болгарские мученицы",
+                artist: "К. Е. Маковский",
+                year: "",
+                genre: "",
+                description: "",
+                image: "34.%20Творчество%20К.%20Маковского/6.%20К.%20Маковский.%20Болгарские%20мученицы.%201877.jpg"
+            },
+            {
+                title: "Смерть Ивана Грозного",
+                artist: "К. Е. Маковский",
+                year: "",
+                genre: "",
+                description: "",
+                image: "34.%20Творчество%20К.%20Маковского/7.%20К.%20Маковский.%20Смерть%20Ивана%20Грозного.%201888.%20Литография%201903%20г.%20(наиболее%20точное%20воспроизведение%20картины).jpg"
+            },
+            {
+                title: "Святочные гадания",
+                artist: "К. Е. Маковский",
+                year: "",
+                genre: "",
+                description: "",
+                image: "34.%20Творчество%20К.%20Маковского/8.%20К.%20Маковский.%20Святочные%20гадания.%201890-е.jpg"
+            },
+            {
+                title: "Агенты Дмитрия Самозванца убивают сына Бориса Годунова",
+                artist: "К. Е. Маковский",
+                year: "",
+                genre: "",
+                description: "",
+                image: "34.%20Творчество%20К.%20Маковского/Агенты%20Дмитрия%20Самозванца%20убивают%20сына%20Бориса%20Годунова.webp"
+            },
+            {
+                title: "В мастерской художника (портрет сына Сергея)",
+                artist: "К. Е. Маковский",
+                year: "",
+                genre: "",
+                description: "",
+                image: "34.%20Творчество%20К.%20Маковского/В%20мастерской%20художника%20(портрет%20сына%20Сергея).jpg"
+            },
+            {
+                title: "Дети господина Балашова",
+                artist: "К. Е. Маковский",
+                year: "",
+                genre: "",
+                description: "",
+                image: "34.%20Творчество%20К.%20Маковского/Дети%20господина%20Балашова.jpg"
+            },
+            {
+                title: "Игра в жмурки",
+                artist: "К. Е. Маковский",
+                year: "",
+                genre: "",
+                description: "",
+                image: "34.%20Творчество%20К.%20Маковского/Игра%20в%20жмурки.jpg"
+            },
+            {
+                title: "Автопортрет",
+                artist: "К. Е. Маковский",
+                year: "",
+                genre: "",
+                description: "",
+                image: "34.%20Творчество%20К.%20Маковского/К.%20Маковский.%20Автопортрет.%201856.jpg"
+            },
+            {
+                title: "Боярыня у окна",
+                artist: "К. Е. Маковский",
+                year: "",
+                genre: "",
+                description: "",
+                image: "34.%20Творчество%20К.%20Маковского/К.%20Маковский.%20Боярыня%20у%20окна.%201885.jpg"
+            },
+            {
+                title: "Крестьянские дети",
+                artist: "К. Е. Маковский",
+                year: "",
+                genre: "",
+                description: "",
+                image: "34.%20Творчество%20К.%20Маковского/К.%20Маковский.%20Крестьянские%20дети.%201875.jpg"
+            },
+            {
+                title: "Портрет В.А. Морозовой",
+                artist: "К. Е. Маковский",
+                year: "",
+                genre: "",
+                description: "",
+                image: "34.%20Творчество%20К.%20Маковского/К.%20Маковский.%20Портрет%20В.А.%20Морозовой.%201884.jpg"
+            },
+            {
+                title: "Селёдочница",
+                artist: "К. Е. Маковский",
+                year: "",
+                genre: "",
+                description: "",
+                image: "34.%20Творчество%20К.%20Маковского/К.%20Маковский.%20Селёдочница.%201867.jpg"
+            },
+            {
+                title: "Портрет Ю. П. Маковской",
+                artist: "К. Е. Маковский",
+                year: "",
+                genre: "",
+                description: "",
+                image: "34.%20Творчество%20К.%20Маковского/Портрет%20Ю.%20П.%20Маковской.jpg"
+            },
+            {
+                title: "Портрет графини С. И. Строгановой",
+                artist: "К. Е. Маковский",
+                year: "",
+                genre: "",
+                description: "",
+                image: "34.%20Творчество%20К.%20Маковского/Портрет%20графини%20С.%20И.%20Строгановой.jpg"
+            },
+            {
+                title: "Поцелуйный обряд» «Пир у боярина Морозова",
+                artist: "К. Е. Маковский",
+                year: "",
+                genre: "",
+                description: "",
+                image: "34.%20Творчество%20К.%20Маковского/Поцелуйный%20обряд»%20_%20«Пир%20у%20боярина%20Морозова.jpg"
+            },
+            {
+                title: "Русалки",
+                artist: "К. Е. Маковский",
+                year: "",
+                genre: "",
+                description: "",
+                image: "34.%20Творчество%20К.%20Маковского/Русалки.jpg"
+            },
+            {
+                title: "Семейный портрет (Ю. П. Маковская с детьми — Сергеем и Еленой)",
+                artist: "К. Е. Маковский",
+                year: "",
+                genre: "",
+                description: "",
+                image: "34.%20Творчество%20К.%20Маковского/Семейный%20портрет%20(Ю.%20П.%20Маковская%20с%20детьми%20—%20Сергеем%20и%20Еленой).jpg"
+            },
+            {
+                title: "Харон перевозит души умерших через реку Стикс",
+                artist: "К. Е. Маковский",
+                year: "",
+                genre: "",
+                description: "",
+                image: "34.%20Творчество%20К.%20Маковского/Харон%20перевозит%20души%20умерших%20через%20реку%20Стикс.webp"
+            },
+            {
+                title: "Больная",
+                artist: "В. Д. Поленов",
+                year: "",
+                genre: "",
+                description: "",
+                image: "37.%20Поленов/9.%20Больная.%201886.jpg"
+            },
+            {
+                title: "Воскрешение дочери Иаира",
+                artist: "В. Д. Поленов",
+                year: "",
+                genre: "",
+                description: "",
+                image: "37.%20Поленов/1.%20Воскрешение%20дочери%20Иаира.1871.jpg"
+            },
+            {
+                title: "Мечты (На горе)",
+                artist: "В. Д. Поленов",
+                year: "",
+                genre: "",
+                description: "",
+                image: "37.%20Поленов/11.%20Мечты%20(На%20горе).jpg"
+            },
+            {
+                title: "На Тивериадском (Генисаретском) озере",
+                artist: "В. Д. Поленов",
+                year: "",
+                genre: "",
+                description: "",
+                image: "37.%20Поленов/12.%20На%20Тивериадском%20(Генисаретском)%20озере.1888.jpg"
+            },
+            {
+                title: "Олива в Гефсиманском саду",
+                artist: "В. Д. Поленов",
+                year: "",
+                genre: "",
+                description: "",
+                image: "37.%20Поленов/14.%20Олива%20в%20Гефсиманском%20саду.jpg"
+            },
+            {
+                title: "Среди учителей",
+                artist: "В. Д. Поленов",
+                year: "",
+                genre: "",
+                description: "",
+                image: "37.%20Поленов/13.%20Среди%20учителей.%201896.JPG"
+            },
+            {
+                title: "Эрехтейон",
+                artist: "В. Д. Поленов",
+                year: "",
+                genre: "",
+                description: "",
+                image: "37.%20Поленов/15.%20Эрехтейон.jpg"
+            },
+            {
+                title: "Парфенон",
+                artist: "В. Д. Поленов",
+                year: "",
+                genre: "",
+                description: "",
+                image: "37.%20Поленов/16.%20Парфенон.jpg"
+            },
+            {
+                title: "Нормандский берег",
+                artist: "В. Д. Поленов",
+                year: "",
+                genre: "",
+                description: "",
+                image: "37.%20Поленов/2.%20Нормандский%20берег.%201874.jpg"
+            },
+            {
+                title: "Ранний снег",
+                artist: "В. Д. Поленов",
+                year: "",
+                genre: "",
+                description: "",
+                image: "37.%20Поленов/8.%20Ранний%20снег.%201891.jpg"
+            },
+            {
+                title: "Саул у аэндорской волшебницы",
+                artist: "Н. Н. Ге",
+                year: "",
+                genre: "",
+                description: "",
+                image: "32.%20Историческая%20картина%20в%20творчестве%20Н.Н.Ге./2.%20Саул%20у%20аэндорской%20волшебницы.jpg"
+            },
+            {
+                title: "Пушкин в Михайловском",
+                artist: "Н. Н. Ге",
+                year: "",
+                genre: "",
+                description: "",
+                image: "32.%20Историческая%20картина%20в%20творчестве%20Н.Н.Ге./8.%20Пушкин%20в%20Михайловском.jpg"
+            },
+            {
+                title: "Сомнамбула",
+                artist: "И. Н. Крамской",
+                year: "",
+                genre: "",
+                description: "",
+                image: "38.%20Историческая%20и%20бытовая%20картина%20в%20творчестве%20И.%20Н.%20Крамского/1.2.%20Крамской.%20Сомнамбула.%201871.jpg"
+            },
+            {
+                title: "Хохот",
+                artist: "И. Н. Крамской",
+                year: "",
+                genre: "",
+                description: "",
+                image: "38.%20Историческая%20и%20бытовая%20картина%20в%20творчестве%20И.%20Н.%20Крамского/9.%20Крамской.%20Хохот.%20ГРМ.%201870-1880.jpg"
+            },
+            {
+                title: "Болото в лесу. Осень",
+                artist: "Ф. А. Васильев",
+                year: "",
+                genre: "",
+                description: "",
+                image: "4.%20Творчество%20Ф.%20Васильева/Васильев.%201872%20Болото%20в%20лесу.%20Осень.jpg"
+            },
+            {
+                title: "Вид на Волге. Барки",
+                artist: "Ф. А. Васильев",
+                year: "",
+                genre: "",
+                description: "",
+                image: "4.%20Творчество%20Ф.%20Васильева/Васильев.%201870.%20Вид%20на%20Волге.%20Барки..jpg"
             },
             {
                 title: "В лесу графини Мордвиновой. Петергоф",
@@ -2384,7 +3065,7 @@ body {
                 title: "Воспитанница",
                 artist: "Н. В. Неврев",
                 year: "1860",
-                genre: "Жанровая живопись",
+                genre: "Бытовой жанр",
                 description: "",
                 image: "https://cdn.tretyakov.ru/mytretyakov/24/9dbed8c264a7c9a33647afd3eb14110e/thumb/e9f1397f9ddcf49c9db80fb31eddfd9c_x1.jpg"
             }
